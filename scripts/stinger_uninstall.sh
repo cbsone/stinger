@@ -53,7 +53,7 @@ export CURRENT_WORKING_DIR=$(pwd) # relative path support
 cd $( dirname "${BASH_SOURCE[0]}" )/..
 
 # Load bash script helper functions
-. ./scripts/helpers/eosio.sh
+. ./scripts/helpers/stinger.sh
 
 # Support relative paths : https://github.com/EOSIO/eos/issues/7560
 ( [[ ! -z $INSTALL_LOCATION ]] && [[ ! $INSTALL_LOCATION =~ ^\/ ]] ) && export INSTALL_LOCATION="${CURRENT_WORKING_DIR}/$INSTALL_LOCATION"
