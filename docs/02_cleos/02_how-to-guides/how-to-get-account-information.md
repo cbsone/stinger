@@ -1,6 +1,6 @@
 ## Goal
 
-Query infomation of an EOSIO account
+Query infomation of an Stinger account
 
 ## Before you begin
 
@@ -40,4 +40,4 @@ cpu bandwidth:
 ```
 
 [[info | Account Fields]]
-| Depending on the EOSIO network you are connected, you might see different fields associated with an account. That depends on which system contract has been deployed on the network.
+| Depending on the Stinger network you are connected, you might see different fields associated with an account. That depends on which system contract has been deployed on the network.

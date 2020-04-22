@@ -1,8 +1,8 @@
 ---
-content_title: Test EOSIO Binaries
+content_title: Test Stinger Binaries
 ---
 
-Optionally, a set of tests can be run against your build to perform some basic validation of the EOSIO software installation.
+Optionally, a set of tests can be run against your build to perform some basic validation of the Stinger software installation.
 
 To run the test suite after building, run:
 

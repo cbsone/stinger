@@ -1,6 +1,6 @@
 ## Goal
 
-Deploy an EOSIO contract
+Deploy an Stinger contract
 
 ## Before you begin
 
