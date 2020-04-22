@@ -15,7 +15,7 @@ echo "Disk space available: ${DISK_AVAIL}G"
 # We install clang8 for Ubuntu 16, but we still need something to compile cmake, boost, etc + pinned 18 still needs something to build source
 ( [[ $VERSION_ID == "16.04" ]] || ( $PIN_COMPILER && [[ $VERSION_ID == "18.04" ]] ) ) && ensure-build-essential
 $ENABLE_COVERAGE_TESTING && EXTRA_DEPS+=(lcov,dpkg\ -s)
-ensure-apt-packages "${REPO_ROOT}/scripts/eosio_build_ubuntu_deps" $(echo ${EXTRA_DEPS[@]})
+ensure-apt-packages "${REPO_ROOT}/scripts/stinger_build_ubuntu_deps" $(echo ${EXTRA_DEPS[@]})
 echo ""
 # Handle clang/compiler
 ensure-compiler

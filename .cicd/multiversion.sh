@@ -38,7 +38,7 @@ elif [[ "$DEBUG" == 'true' ]]; then
 fi
 # multiversion
 cd $GIT_ROOT/eos_multiversion_builder
-echo 'Downloading other versions of nodeos...'
+echo 'Downloading other versions of stnode...'
 python2.7 $GIT_ROOT/.cicd/helpers/multi_eos_docker.py
 cd $GIT_ROOT
 cp $GIT_ROOT/tests/multiversion_paths.conf $GIT_ROOT/build/tests

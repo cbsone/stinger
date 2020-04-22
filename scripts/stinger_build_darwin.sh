@@ -32,7 +32,7 @@ fi
 # Handle clang/compiler
 ensure-compiler
 # Ensure packages exist
-ensure-brew-packages "${REPO_ROOT}/scripts/eosio_build_darwin_deps"
+ensure-brew-packages "${REPO_ROOT}/scripts/stinger_build_darwin_deps"
 [[ -z "${CMAKE}" ]] && export CMAKE="/usr/local/bin/cmake"
 # CLANG Installation
 build-clang

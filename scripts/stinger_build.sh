@@ -166,13 +166,13 @@ if [[ $ARCH == "Linux" ]]; then
    case $NAME in
       "Amazon Linux AMI" | "Amazon Linux")
          echo "${COLOR_CYAN}[Ensuring YUM installation]${COLOR_NC}"
-         FILE="${REPO_ROOT}/scripts/eosio_build_amazonlinux.sh"
+         FILE="${REPO_ROOT}/scripts/stinger_build_amazonlinux.sh"
       ;;
       "CentOS Linux")
-         FILE="${REPO_ROOT}/scripts/eosio_build_centos.sh"
+         FILE="${REPO_ROOT}/scripts/stinger_build_centos.sh"
       ;;
       "Ubuntu")
-         FILE="${REPO_ROOT}/scripts/eosio_build_ubuntu.sh"
+         FILE="${REPO_ROOT}/scripts/stinger_build_ubuntu.sh"
       ;;
       *) print_supported_linux_distros_and_exit;;
    esac
@@ -223,14 +223,14 @@ execute cd $REPO_ROOT 1>/dev/null
 
 TIME_END=$(( $(date -u +%s) - $TIME_BEGIN ))
 
-echo " _______  _______  _______ _________ _______"
-echo "(  ____ \(  ___  )(  ____   __   __ (  ___  )"
-echo "| (    \/| (   ) || (    \/   ) (   | (   ) |"
-echo "| (__    | |   | || (_____    | |   | |   | |"
-echo "|  __)   | |   | |(_____  )   | |   | |   | |"
-echo "| (      | |   | |      ) |   | |   | |   | |"
-echo "| (____/\| (___) |/\____) |___) (___| (___) |"
-echo "(_______/(_______)\_______)\_______/(_______)"
+echo ""
+echo "  ____________________.___ _______    _____________________________ "
+echo " /   _____/\__    ___/|   |\      \  /  _____/\_   _____/\______   \ "
+echo " \_____  \   |    |   |   |/   |   \/   \  ___ |    __)_  |       _/ "
+echo " /        \  |    |   |   /    |    \    \_\  \|        \ |    |   \ "
+echo "/_______  /  |____|   |___\____|__  /\______  /_______  / |____|_  / "
+echo "        \/                        \/        \/        \/         \/  "
+echo ""
 echo "=============================================${COLOR_NC}"
 
 echo "${COLOR_GREEN}Stinger has been successfully built. $(($TIME_END/3600)):$(($TIME_END%3600/60)):$(($TIME_END%60))"

@@ -1,7 +1,6 @@
 {
     "name": "eos",
-    "generators": [
-        {
+    "generators": [{
             "name": "collate_markdown",
             "options": {
                 "docs_dir": "docs"
@@ -11,7 +10,7 @@
             "name": "swagger",
             "options": {
                 "swagger_path": "plugins/chain_api_plugin/chain.swagger.yaml",
-                "swagger_dest_path": "nodeos/plugins/chain_api_plugin/api-reference",
+                "swagger_dest_path": "stnode/plugins/chain_api_plugin/api-reference",
                 "disable_filters": true,
                 "disable_summary_gen": true
             }
@@ -20,7 +19,7 @@
             "name": "swagger",
             "options": {
                 "swagger_path": "plugins/db_size_api_plugin/db_size.swagger.yaml",
-                "swagger_dest_path": "nodeos/plugins/db_size_api_plugin/api-reference",
+                "swagger_dest_path": "stnode/plugins/db_size_api_plugin/api-reference",
                 "disable_filters": true,
                 "disable_summary_gen": true
             }
@@ -29,7 +28,7 @@
             "name": "swagger",
             "options": {
                 "swagger_path": "plugins/producer_api_plugin/producer.swagger.yaml",
-                "swagger_dest_path": "nodeos/plugins/producer_api_plugin/api-reference",
+                "swagger_dest_path": "stnode/plugins/producer_api_plugin/api-reference",
                 "disable_filters": true,
                 "disable_summary_gen": true
             }
@@ -38,7 +37,7 @@
             "name": "swagger",
             "options": {
                 "swagger_path": "plugins/net_api_plugin/net.swagger.yaml",
-                "swagger_dest_path": "nodeos/plugins/net_api_plugin/api-reference",
+                "swagger_dest_path": "stnode/plugins/net_api_plugin/api-reference",
                 "disable_filters": true,
                 "disable_summary_gen": true
             }
@@ -47,7 +46,7 @@
             "name": "swagger",
             "options": {
                 "swagger_path": "plugins/test_control_api_plugin/test_control.swagger.yaml",
-                "swagger_dest_path": "nodeos/plugins/test_control_api_plugin/api-reference",
+                "swagger_dest_path": "stnode/plugins/test_control_api_plugin/api-reference",
                 "disable_filters": true,
                 "disable_summary_gen": true
             }
@@ -56,7 +55,7 @@
             "name": "swagger",
             "options": {
                 "swagger_path": "plugins/trace_api_plugin/trace_api.swagger.yaml",
-                "swagger_dest_path": "nodeos/plugins/trace_api_plugin/api-reference",
+                "swagger_dest_path": "stnode/plugins/trace_api_plugin/api-reference",
                 "disable_filters": true,
                 "disable_summary_gen": true
             }
