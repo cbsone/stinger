@@ -405,8 +405,8 @@ namespace eosio {
     *
     *  DO NOT EDIT net_version_base OR net_version_range!
     */
-   constexpr uint16_t net_version_base = 0x04b5;
-   constexpr uint16_t net_version_range = 106;
+   constexpr uint16_t net_version_base = 0x0010; // constexpr uint16_t net_version_base = 0x04b5;
+   constexpr uint16_t net_version_range = 1; // 10
    /**
     *  If there is a change to network protocol or behavior, increment net version to identify
     *  the need for compatibility hooks
@@ -3268,16 +3268,16 @@ namespace eosio {
    void net_plugin::set_program_options( options_description& /*cli*/, options_description& cfg )
    {
       cfg.add_options()
-         ( "p2p-listen-endpoint", bpo::value<string>()->default_value( "0.0.0.0:9876" ), "The actual host:port used to listen for incoming p2p connections.")
+         ( "p2p-listen-endpoint", bpo::value<string>()->default_value( "0.0.0.0:5605" ), "The actual host:port used to listen for incoming p2p connections.") // old port is 9876
          ( "p2p-server-address", bpo::value<string>(), "An externally accessible host:port for identifying this node. Defaults to p2p-listen-endpoint.")
          ( "p2p-peer-address", bpo::value< vector<string> >()->composing(),
            "The public endpoint of a peer node to connect to. Use multiple p2p-peer-address options as needed to compose a network.\n"
            "  Syntax: host:port[:<trx>|<blk>]\n"
            "  The optional 'trx' and 'blk' indicates to node that only transactions 'trx' or blocks 'blk' should be sent."
            "  Examples:\n"
-           "    p2p.eos.io:9876\n"
-           "    p2p.trx.eos.io:9876:trx\n"
-           "    p2p.blk.eos.io:9876:blk\n")
+           "    p2p.cbs.one:5605\n"
+           "    p2p.trx.cbs.one:5605:trx\n"
+           "    p2p.blk.cbs.one:5605:blk\n")
          ( "p2p-max-nodes-per-host", bpo::value<int>()->default_value(def_max_nodes_per_host), "Maximum number of client nodes from any single IP address")
          ( "p2p-accept-transactions", bpo::value<bool>()->default_value(true), "Allow transactions received over p2p network to be evaluated and relayed if valid.")
          ( "agent-name", bpo::value<string>()->default_value("\"EOS Test Agent\""), "The name supplied to identify this node amongst the peers.")
