@@ -1,11 +1,11 @@
 
-# EOSIO - The Most Powerful Infrastructure for Decentralized Applications
+# Stinger - The Most Powerful Infrastructure for Decentralized Applications
 
-[![Build status](https://badge.buildkite.com/370fe5c79410f7d695e4e34c500b4e86e3ac021c6b1f739e20.svg?branch=master)](https://buildkite.com/EOSIO/eosio)
+[![Build status](https://badge.buildkite.com/370fe5c79410f7d695e4e34c500b4e86e3ac021c6b1f739e20.svg?branch=master)](https://buildkite.com/cbsone/cbsone)
 
-Welcome to the EOSIO source code repository! This software enables businesses to rapidly build and deploy high-performance and high-security blockchain-based applications.
+Welcome to the Stinger source code repository! This software enables businesses to rapidly build and deploy high-performance and high-security blockchain-based applications.
 
-Some of the groundbreaking features of EOSIO include:
+Some of the groundbreaking features of Stinger include:
 
 1. Free Rate Limited Transactions
 1. Low Latency Block confirmation (0.5 seconds)
@@ -22,15 +22,15 @@ Some of the groundbreaking features of EOSIO include:
 
 ## Disclaimer
 
-Block.one is neither launching nor operating any initial public blockchains based upon the EOSIO software. This release refers only to version 1.0 of our open source software. We caution those who wish to use blockchains built on EOSIO to carefully vet the companies and organizations launching blockchains based on EOSIO before disclosing any private keys to their derivative software.
+CBS One is neither launching nor operating any initial public blockchains based upon the Stinger software. This release refers only to version 1.0 of our open source software. We caution those who wish to use blockchains built on Stinger to carefully vet the companies and organizations launching blockchains based on Stinger before disclosing any private keys to their derivative software.
 
 ## Official Testnet
 
-[testnet.eos.io](https://testnet.eos.io/)
+[testnet.cbs.one](https://testnet.cbs.one/)
 
 ## Supported Operating Systems
 
-EOSIO currently supports the following operating systems:  
+Stinger currently supports the following operating systems:  
 
 1. Amazon Linux 2
 2. CentOS 7
@@ -40,93 +40,93 @@ EOSIO currently supports the following operating systems:
 
 ---
 
-**Note: It may be possible to install EOSIO on other Unix-based operating systems. This is not officially supported, though.**
+**Note: It may be possible to install Stinger on other Unix-based operating systems. This is not officially supported, though.**
 
 ---
 
 ## Software Installation
 
-If you are new to EOSIO, it is recommended that you install the [EOSIO Prebuilt Binaries](#prebuilt-binaries), then proceed to the [Getting Started](https://developers.eos.io/eosio-home/docs) walkthrough. If you are an advanced developer, a block producer, or no binaries are available for your platform, you may need to [Build EOSIO from source](https://eosio.github.io/eos/latest/install/build-from-source).
+If you are new to Stinger, it is recommended that you install the [Stinger Prebuilt Binaries](#prebuilt-binaries), then proceed to the [Getting Started](https://developers.cbs.one/cbsone-home/docs) walkthrough. If you are an advanced developer, a block producer, or no binaries are available for your platform, you may need to [Build Stinger from source](https://cbsone.github.io/cbs/latest/install/build-from-source).
 
 ---
 
-**Note: If you used our scripts to build/install EOSIO, please run the [Uninstall Script](#uninstall-script) before using our prebuilt binary packages.**
+**Note: If you used our scripts to build/install Stinger, please run the [Uninstall Script](#uninstall-script) before using our prebuilt binary packages.**
 
 ---
 
 ## Prebuilt Binaries
 
-Prebuilt EOSIO software packages are available for the operating systems below. Find and follow the instructions for your OS:
+Prebuilt Stinger software packages are available for the operating systems below. Find and follow the instructions for your OS:
 
 ### Mac OS X:
 
 #### Mac OS X Brew Install
 ```sh
-brew tap eosio/eosio
-brew install eosio
+$ brew tap cbsone/cbsone
+$ brew install cbsone
 ```
 #### Mac OS X Brew Uninstall
 ```sh
-brew remove eosio
+$ brew remove cbsone
 ```
 
 ### Ubuntu Linux:
 
 #### Ubuntu 18.04 Package Install
 ```sh
-wget https://github.com/eosio/eos/releases/download/v2.0.5/eosio_2.0.5-1-ubuntu-18.04_amd64.deb
-sudo apt install ./eosio_2.0.5-1-ubuntu-18.04_amd64.deb
+$ wget https://github.com/cbsone/eos/releases/download/v2.0.4/Stinger_2.0.4-1-ubuntu-18.04_amd64.deb
+$ sudo apt install ./Stinger_2.0.4-1-ubuntu-18.04_amd64.deb
 ```
 #### Ubuntu 16.04 Package Install
 ```sh
-wget https://github.com/eosio/eos/releases/download/v2.0.5/eosio_2.0.5-1-ubuntu-16.04_amd64.deb
-sudo apt install ./eosio_2.0.5-1-ubuntu-16.04_amd64.deb
+$ wget https://github.com/cbsone/eos/releases/download/v2.0.4/Stinger_2.0.4-1-ubuntu-16.04_amd64.deb
+$ sudo apt install ./Stinger_2.0.4-1-ubuntu-16.04_amd64.deb
 ```
 #### Ubuntu Package Uninstall
 ```sh
-sudo apt remove eosio
+$ sudo apt remove cbsone
 ```
 
 ### RPM-based (CentOS, Amazon Linux, etc.):
 
 #### RPM Package Install
 ```sh
-wget https://github.com/eosio/eos/releases/download/v2.0.5/eosio-2.0.5-1.el7.x86_64.rpm
-sudo yum install ./eosio-2.0.5-1.el7.x86_64.rpm
+$ wget https://github.com/cbsone/eos/releases/download/v2.0.4/cbsone-2.0.4-1.el7.x86_64.rpm
+$ sudo yum install ./cbsone-2.0.4-1.el7.x86_64.rpm
 ```
 #### RPM Package Uninstall
 ```sh
-sudo yum remove eosio
+$ sudo yum remove cbsone
 ```
 
 ## Uninstall Script
-To uninstall the EOSIO built/installed binaries and dependencies, run:
+To uninstall the Stinger built/installed binaries and dependencies, run:
 ```sh
-./scripts/eosio_uninstall.sh
+./scripts/Stinger_uninstall.sh
 ```
 
 ## Documentation
-1. [Nodeos](http://eosio.github.io/eos/latest/nodeos/)
-    - [Usage](http://eosio.github.io/eos/latest/nodeos/usage/index)
-    - [Replays](http://eosio.github.io/eos/latest/nodeos/replays/index)
-    - [Chain API Reference](http://eosio.github.io/eos/latest/nodeos/plugins/chain_api_plugin/api-reference/index)
-    - [Troubleshooting](http://eosio.github.io/eos/latest/nodeos/troubleshooting/index)
-1. [Cleos](http://eosio.github.io/eos/latest/cleos/)
-1. [Keosd](http://eosio.github.io/eos/latest/keosd/)
+1. [cbsnode](http://cbsone.github.io/cbs/latest/cbsnode/)
+    - [Usage](http://cbsone.github.io/cbs/latest/cbsnode/usage/index)
+    - [Replays](http://cbsone.github.io/cbs/latest/cbsnode/replays/index)
+    - [Chain API Reference](http://cbsone.github.io/cbs/latest/cbsnode/plugins/chain_api_plugin/api-reference/index)
+    - [Troubleshooting](http://cbsone.github.io/cbs/latest/cbsnode/troubleshooting/index)
+1. [cbs-cli](http://cbsone.github.io/cbs/latest/cbs-cli/)
+1. [cbs-keys](http://cbsone.github.io/cbs/latest/cbs-keys/)
 
 ## Resources
-1. [Website](https://eos.io)
-1. [Blog](https://medium.com/eosio)
-1. [Developer Portal](https://developers.eos.io)
-1. [StackExchange for Q&A](https://eosio.stackexchange.com/)
+1. [Website](https://cbs.one)
+1. [Blog](https://medium.com/cbsone)
+1. [Developer Portal](https://developers.cbs.one)
+1. [StackExchange for Q&A](https://cbsone.stackexchange.com/)
 1. [Community Telegram Group](https://t.me/EOSProject)
 1. [Developer Telegram Group](https://t.me/joinchat/EaEnSUPktgfoI-XPfMYtcQ)
-1. [White Paper](https://github.com/EOSIO/Documentation/blob/master/TechnicalWhitePaper.md)
-1. [Roadmap](https://github.com/EOSIO/Documentation/blob/master/Roadmap.md)
+1. [White Paper](https://github.com/Stinger/Documentation/blob/master/TechnicalWhitePaper.md)
+1. [Roadmap](https://github.com/Stinger/Documentation/blob/master/Roadmap.md)
 
 <a name="gettingstarted"></a>
 ## Getting Started
-Instructions detailing the process of getting the software, building it, running a simple test network that produces blocks, account creation and uploading a sample contract to the blockchain can be found in the [Getting Started](https://developers.eos.io/welcome/latest/getting-started) walkthrough.
+Instructions detailing the process of getting the software, building it, running a simple test network that produces blocks, account creation and uploading a sample contract to the blockchain can be found in the [Getting Started](https://developers.cbs.one/welcome/latest/getting-started) walkthrough.
 
 ## Contributing
 
@@ -136,7 +136,7 @@ Instructions detailing the process of getting the software, building it, running
 
 ## License
 
-EOSIO is released under the open source [MIT](./LICENSE) license and is offered “AS IS” without warranty of any kind, express or implied. Any security provided by the EOSIO software depends in part on how it is used, configured, and deployed. EOSIO is built upon many third-party libraries such as WABT (Apache License) and WAVM (BSD 3-clause) which are also provided “AS IS” without warranty of any kind. Without limiting the generality of the foregoing, Block.one makes no representation or guarantee that EOSIO or any third-party libraries will perform as intended or will be free of errors, bugs or faulty code. Both may fail in large or small ways that could completely or partially limit functionality or compromise computer systems. If you use or implement EOSIO, you do so at your own risk. In no event will Block.one be liable to any party for any damages whatsoever, even if it had been advised of the possibility of damage.  
+Stinger is released under the open source [MIT](./LICENSE) license and is offered “AS IS” without warranty of any kind, express or implied. Any security provided by the Stinger software depends in part on how it is used, configured, and deployed. Stinger is built upon many third-party libraries such as WABT (Apache License) and WAVM (BSD 3-clause) which are also provided “AS IS” without warranty of any kind. Without limiting the generality of the foregoing, CBS One makes no representation or guarantee that Stinger or any third-party libraries will perform as intended or will be free of errors, bugs or faulty code. Both may fail in large or small ways that could completely or partially limit functionality or compromise computer systems. If you use or implement Stinger, you do so at your own risk. In no event will CBS One be liable to any party for any damages whatsoever, even if it had been advised of the possibility of damage.  
 
 ## Important
 
