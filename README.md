@@ -24,10 +24,6 @@ Some of the groundbreaking features of Stinger include:
 
 CBS One is neither launching nor operating any initial public blockchains based upon the Stinger software. This release refers only to version 1.0 of our open source software. We caution those who wish to use blockchains built on Stinger to carefully vet the companies and organizations launching blockchains based on Stinger before disclosing any private keys to their derivative software.
 
-## Official Testnet
-
-[testnet.cbs.one](https://testnet.cbs.one/)
-
 ## Supported Operating Systems
 
 Stinger currently supports the following operating systems:  
@@ -46,7 +42,7 @@ Stinger currently supports the following operating systems:
 
 ## Software Installation
 
-If you are new to Stinger, it is recommended that you install the [Stinger Prebuilt Binaries](#prebuilt-binaries), then proceed to the [Getting Started](https://developers.cbs.one/cbsone-home/docs) walkthrough. If you are an advanced developer, a block producer, or no binaries are available for your platform, you may need to [Build Stinger from source](https://cbsone.github.io/cbs/latest/install/build-from-source).
+If you are new to Stinger, it is recommended that you install the [Stinger Prebuilt Binaries](#prebuilt-binaries), then proceed to the [Getting Started](#getting-started) walkthrough. If you are an advanced developer, a block producer, or no binaries are available for your platform, you may need to [Build Stinger from source](#paste-link-here).
 
 ---
 
@@ -62,24 +58,24 @@ Prebuilt Stinger software packages are available for the operating systems below
 
 #### Mac OS X Brew Install
 ```sh
-$ brew tap cbsone/cbsone
-$ brew install cbsone
+$ brew tap cbsone/stinger
+$ brew install stinger
 ```
 #### Mac OS X Brew Uninstall
 ```sh
-$ brew remove cbsone
+$ brew remove stinger
 ```
 
 ### Ubuntu Linux:
 
 #### Ubuntu 18.04 Package Install
 ```sh
-$ wget https://github.com/cbsone/eos/releases/download/v2.0.4/Stinger_2.0.4-1-ubuntu-18.04_amd64.deb
+$ wget https://github.com/cbsone/stinger/releases/download/v2.0.4/Stinger_2.0.4-1-ubuntu-18.04_amd64.deb
 $ sudo apt install ./Stinger_2.0.4-1-ubuntu-18.04_amd64.deb
 ```
 #### Ubuntu 16.04 Package Install
 ```sh
-$ wget https://github.com/cbsone/eos/releases/download/v2.0.4/Stinger_2.0.4-1-ubuntu-16.04_amd64.deb
+$ wget https://github.com/cbsone/stinger/releases/download/v2.0.4/Stinger_2.0.4-1-ubuntu-16.04_amd64.deb
 $ sudo apt install ./Stinger_2.0.4-1-ubuntu-16.04_amd64.deb
 ```
 #### Ubuntu Package Uninstall
@@ -91,8 +87,8 @@ $ sudo apt remove cbsone
 
 #### RPM Package Install
 ```sh
-$ wget https://github.com/cbsone/eos/releases/download/v2.0.4/cbsone-2.0.4-1.el7.x86_64.rpm
-$ sudo yum install ./cbsone-2.0.4-1.el7.x86_64.rpm
+$ wget https://github.com/cbsone/stinger/releases/download/v2.0.4/stinger-2.0.4-1.el7.x86_64.rpm
+$ sudo yum install ./stinger-2.0.4-1.el7.x86_64.rpm
 ```
 #### RPM Package Uninstall
 ```sh
@@ -106,27 +102,26 @@ To uninstall the Stinger built/installed binaries and dependencies, run:
 ```
 
 ## Documentation
-1. [cbsnode](http://cbsone.github.io/cbs/latest/cbsnode/)
-    - [Usage](http://cbsone.github.io/cbs/latest/cbsnode/usage/index)
-    - [Replays](http://cbsone.github.io/cbs/latest/cbsnode/replays/index)
-    - [Chain API Reference](http://cbsone.github.io/cbs/latest/cbsnode/plugins/chain_api_plugin/api-reference/index)
-    - [Troubleshooting](http://cbsone.github.io/cbs/latest/cbsnode/troubleshooting/index)
-1. [cbs-cli](http://cbsone.github.io/cbs/latest/cbs-cli/)
-1. [cbs-keys](http://cbsone.github.io/cbs/latest/cbs-keys/)
+1. [cbsnode](http://github.io/cbsnode/stinger/docs)
+    - [Usage](http://github.io/cbsnode/stinger/docs/usage/index)
+    - [Replays](http://github.io/cbsnode/stinger/docs/replays/index)
+    - [Chain API Reference](http://github.io/cbsnode/stinger/docs/plugins/chain_api_plugin/api-reference/index)
+    - [Troubleshooting](http://github.io/cbsnode/stinger/docs/troubleshooting/index)
+1. [cbs-cli](http://github.io/cbsnode/stinger/docs/cbs-cli/)
+1. [cbs-keys](http://github.io/cbsnode/stinger/docs/cbs-keys/)
 
 ## Resources
 1. [Website](https://cbs.one)
 1. [Blog](https://medium.com/cbsone)
-1. [Developer Portal](https://developers.cbs.one)
-1. [StackExchange for Q&A](https://cbsone.stackexchange.com/)
+1. [Developer Portal](#paste-link-here)
 1. [Community Telegram Group](https://t.me/EOSProject)
 1. [Developer Telegram Group](https://t.me/joinchat/EaEnSUPktgfoI-XPfMYtcQ)
-1. [White Paper](https://github.com/Stinger/Documentation/blob/master/TechnicalWhitePaper.md)
-1. [Roadmap](https://github.com/Stinger/Documentation/blob/master/Roadmap.md)
+1. [White Paper](https://github.com/cbsone/Documentation/blob/master/TechnicalWhitePaper.md)
+1. [Roadmap](https://github.com/cbsone/Documentation/blob/master/Roadmap.md)
 
 <a name="gettingstarted"></a>
 ## Getting Started
-Instructions detailing the process of getting the software, building it, running a simple test network that produces blocks, account creation and uploading a sample contract to the blockchain can be found in the [Getting Started](https://developers.cbs.one/welcome/latest/getting-started) walkthrough.
+Instructions detailing the process of getting the software, building it, running a simple test network that produces blocks, account creation and uploading a sample contract to the blockchain can be found in the [Getting Started](#getting-started) walkthrough.
 
 ## Contributing
 
